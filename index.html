@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div
+      class="main container d-flex justify-content-center align-items-center"
+    >
+      <h1 class="text-center">Bookmarker</h1>
+    </div>
+    <!-- erfdvrefdgvfrdgvcefd -->
+    <div
+      class="bookmark-body container w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4"
+    >
+      <h2>
+        <i class="fa-solid fa-bookmark"></i>
+        Bookmark your favorite sites
+        <i class="fa-solid fa-bookmark"></i>
+      </h2>
+      <div class="site-name w-100 d-flex flex-column justify-content-center">
+        <label for="bookmarkName" class="pb-2 fw-semibold">
+          <i class="fa-solid fa-book-bookmark pe-2"></i>
+          Site Name</label
+        >
+        <input
+          type="text"
+          placeholder="Bookmark Name"
+          class="form-control"
+          id="bookmarkName"
+        />
+        <div id="alertName" class="alert alert-danger d-none">
+          <p>Enter valid name</p>
+        </div>
+      </div>
+      <!-- fgbghfdbvfgbfgbcfgcb -->
+      <div class="site-url w-100 d-flex flex-column justify-content-center">
+        <label for="bookmarkURL" class="pb-2 fw-semibold">
+          <i class="fa-solid fa-link pe-2"></i>Site URL</label
+        >
+        <input
+          type="url"
+          placeholder="Website URL"
+          class="form-control"
+          id="bookmarkURL"
+        />
+        <div id="alertLink" class="alert alert-danger d-none">
+          <p>Enter valid Link</p>
+        </div>
+      </div>
+      <button class="btn btn-submit px-5" onclick="addProduct()" id="submitBtn">
+        Submit
+      </button>
+    </div>
+    <!-- gfcvdfvdfvdfvdefbvd -->
+    <table class="container table mt-4 text-center bg-light">
+      <thead>
+        <th class="text-capitalize">index</th>
+        <th class="text-capitalize">Website Name</th>
+        <th class="text-capitalize">Visit</th>
+        <th class="text-capitalize">Delete</th>
+      </thead>
+      <tbody id="myRow"></tbody>
+    </table>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
